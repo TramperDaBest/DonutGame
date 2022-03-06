@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+    <script src="p5.play.js"></script>
+         <div align="left">
+    <input type = "button" onclick = "changespeedfast123()" value = "Go faster">
+           <input type = "button" onclick = "changespeedslow123()" value = "Go slower"> 
+           <input type = "button" onclick = "selectspeed123()" value = "Set speed">
+    </div>
+    <script>
+      function changespeedfast123(){
+  speed = speed + 1
+}
+function changespeedslow123(){
+  speed = speed - 1
+}
+function selectspeed123(){
+ var answer = prompt("What do you want to change the speed to? It is normally four.")
+ speed = Number(answer)
+}
+    </script>
+      
+    </body>
+</html>
